@@ -22,7 +22,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background color */
     width: 100%;
     height: 100vh;
 }
@@ -35,17 +34,15 @@ body {
     padding-top: 1rem;
     background-color: black;
     position: fixed;
-
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
 }
 
-
-/* logo */
+/* navbar logo */
 
 .logo a {
     display: flex;
@@ -56,18 +53,17 @@ body {
     text-decoration: none;
     letter-spacing: 0.02rem;
     color: #A52A2A;
-
 }
+
+/* logo image */
 
 .logo img {
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;
-    /* border: 0.1rem solid #A52A2A; */
 }
 
-/* nav links */
-
+/* navbar links */
 
 .links {
     display: flex;
@@ -79,19 +75,16 @@ body {
     font-weight: 600;
     text-decoration: none;
     color: #DBDBDB;
-    /*links color*/
     position: relative;
 }
 
 .link:hover::before {
-    /* border-bottom: 0.2rem solid#A52A2A; */
     width: 100%;
 }
 
 .link:active {
     color: #A52A2A;
 }
-
 
 .link::before {
     content: "";
@@ -103,76 +96,70 @@ body {
     transition: all .4s;
 }
 
-
-
-/* Home section */
+/*/////////////    Home section ////////////////*/
 
 .home {
     width: 100%;
     height: 100%;
-    /* margin-top: 7.5rem; */
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 4rem 1rem 0rem 3rem;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 /* Home image */
 
-.home .img {
-    width: 50%;
-    height: auto;
+.hero-section{
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: auto;
-    padding: 3rem;
-    /* background-color: #242424; */
-    margin-left: -6rem;
-    /* border-radius: 50%; */
+    flex-direction: row-reverse;
+    padding: 8rem;
 }
 
-
+.home .img {
+    width: 40%;
+   
+}
 
 .img img {
     width: 100%;
-    /* border-radius: 50%; */
+    border-radius:30%;
 }
 
 /* Home introduction */
 
 .home .intro {
     flex: 1;
-    height: 75%;
-    /* border: 0.2rem solid black; */
-    /* border-radius: 10rem 0.5rem 10rem 0.5rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 2rem;
-    /* background-color: #2f2f2f; */
+    font-size: 1.3rem;
     color: #DBDBDB;
 }
 
 .intro .name {
-    font-size: larger;
+    font-size:3rem;
     color: #A52A2A;
 }
 
 
 .intro p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    line-height: 2.5rem;
 }
 
 /* butten */
 
+
 .btn button {
     border: none;
-    width: 10rem;
-    height: 3rem;
+    width: 15rem;
+    height: 4rem;
     border-radius: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #DBDBDB;
     background-color: #A52A2A;
@@ -209,7 +196,7 @@ body {
 
 .about-img {
     width: 30%;
-    height: 25rem;
+    height: 30rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -228,11 +215,11 @@ body {
 }
 
 .about-hdg h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 .about-hdg .pera {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     opacity: 0.9;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -252,19 +239,20 @@ body {
 
 .about-hdg h3 {
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 .about-hdg span {
     margin-top: 3rem;
     color: #A52A2A;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 
 
 }
 
 .about-hdg span+p {
     margin-top: 0.1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -282,6 +270,7 @@ body {
 }
 
 .projects h1 {
+    font-size: 2.5rem;
     color: #DBDBDB;
     justify-self: center;
     margin-bottom: 0.4rem;
@@ -289,7 +278,7 @@ body {
 }
 
 .projects h1+p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #DBDBDB;
     justify-self: center;
     margin-bottom: 4rem;
@@ -301,7 +290,7 @@ body {
     display: flex;
     justify-content: center;
     /* justify-content: space-between; */
-    gap: 4rem;
+    gap: 6rem;
     align-items: center;
     color: #DBDBDB;
 }
@@ -317,8 +306,8 @@ body {
 }
 
 .cards div {
-    width: 25rem;
-    height: 30rem;
+    width: 30rem;
+    height: 35rem;
     border-radius: .6rem;
     background-color: #2f2f2f;
 
@@ -331,13 +320,13 @@ body {
 
 
 .cards div h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 750;
     padding: 0rem 1rem;
 }
 
 .cards div p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin: 0rem 1rem;
 }
 
@@ -386,10 +375,11 @@ body {
     color: #DBDBDB;
     justify-self: center;
     margin-bottom: 0.4rem;
+    font-size: 2.5rem;
 }
 
 .services h1+p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #DBDBDB;
     justify-self: center;
     margin-bottom: 4rem;
@@ -397,13 +387,13 @@ body {
 }
 
 .services div h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 750;
     margin-bottom: 2rem;
 }
 
 .services div p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 
 }
 
@@ -448,19 +438,24 @@ body {
     color: #DBDBDB;
     justify-self: center;
     margin-bottom: 0.4rem;
+    font-size: 2.5rem;
 }
 
 .contects h1+p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #DBDBDB;
     justify-self: center;
     margin-bottom: 4rem;
     opacity: 0.7;
 }
 
+.icon h3{
+    font-size: 2rem;
+}
+
 .icons .icon i {
     color: #A52A2A;
-    font-size: 2rem;
+    font-size: 3rem;
     height: 3rem;
     width: 3rem;
     display: flex;
@@ -469,7 +464,7 @@ body {
 }
 
 .icons .icon i:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
     background-color: #A52A2A;
     border-radius: 50%;
     color: #DBDBDB;
@@ -483,6 +478,7 @@ body {
 
 .icons .icon p {
     opacity: 0.7;
+    font-size: 1.5rem;
 }
 
 .inputs {

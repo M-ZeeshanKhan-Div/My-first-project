@@ -289,7 +289,6 @@ body {
 .cards {
     display: flex;
     justify-content: center;
-    /* justify-content: space-between; */
     gap: 6rem;
     align-items: center;
     color: #DBDBDB;
@@ -301,17 +300,14 @@ body {
     height: 55%;
 }
 
-.cards:hover {
-    background-color: #131313;
-}
 
 .cards div {
     width: 30rem;
-    height: 35rem;
+    min-height:34rem;
+    box-sizing: border-box;
+    padding: 1rem;
     border-radius: .6rem;
     background-color: #2f2f2f;
-
-
 }
 
 .cards div:hover {
@@ -360,7 +356,8 @@ body {
 
 .ser-ctr div {
     width: 30rem;
-    height: 25rem;
+    height: auto;
+    box-sizing: border-box;
     /* border: 0.2rem solid#A52A2A; */
     border-radius: .6rem;
     background-color: #2f2f2f;
@@ -592,31 +589,29 @@ footer p {
 }
 
 @media (max-width: 900px) {
-    .home {
+    /* .home {
         flex-direction: column;
         padding: 2rem;
         height: auto;
+    } */
+    .hero-section{
+        /* flex-direction: row; */
+        padding: 2rem;
+        margin-top: 0%;
     }
 
     .home .img {
-        width: 60%;
+        width: 50%;
         margin: 0 auto 2rem auto;
     }
 
     .home .intro {
         border-radius: 2rem;
-        padding: 4rem 2rem;
+        /* padding: 4rem 2rem; */
         text-align: center;
     }
 
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-img {
-        width: 80%;
-    }
+    
 }
 
 @media (max-width: 700px) {
@@ -632,15 +627,38 @@ footer p {
         top: 0;
         right: -100%;
         /* Hidden off-screen */
-        width: 70%;
+        width: 60%;
         height: 100vh;
-        background-color: #2f2f2f;
+        background-color: #0d0d0de2;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         transition: 0.5s ease;
         z-index: 1000;
         box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-section{
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .hero-section .img{
+        width:45% ;
+    }
+    .hero-section p{
+        margin-top:1rem;
+    }
+    .hero-section button{
+         margin-top:1rem;
+    }
+
+    .about-img {
+        width: 60%;
     }
 
     .links.active {
@@ -663,9 +681,23 @@ footer p {
     }
 
     footer {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
+        position: relative;
     }
+
+    .quick-links,
+    .service-bar{
+        width: 50%;
+    }
+     .service-bar{
+        position: absolute;
+        right: 0rem;
+        top: 2.7rem;
+     }
+     .quick-links{
+        text-align: center;
+     }
 
     .about-hdg .pera {
         font-size: 1.2rem;
@@ -679,6 +711,13 @@ footer p {
     }
 
     .home .img {
-        width: 80%;
+        width: 50%;
     }
+    .hero-section{
+        margin: 10%;
+    }
+    /* .intro{
+        padding: 0%;
+
+    } */
 }
